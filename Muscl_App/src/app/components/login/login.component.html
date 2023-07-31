@@ -1,0 +1,50 @@
+<!-- <div class="container mt-5">
+    <div class="card" style="padding: 20px;">
+        <form (ngSubmit)="formSubmit()" >
+            <input type="text"
+            [(ngModel)]="loginData.username"
+            name="username"
+            required
+            placeholder="Enter your username"
+            class="form-control mb-3"
+            >
+
+            <input type="password"
+            [(ngModel)]="loginData.password"
+            name="password"
+            required
+            placeholder="Enter your password"
+            class="form-control mb-3"
+            >
+
+        <button  type="submit" class="btn btn-success"> Login </button>
+        <button  class="btn btn-danger" style="margin-left: 10px;"> Reset </button>
+    
+        </form>
+    </div>
+</div>
+
+-->
+<body>
+    
+    <div class="center">
+        <h1 style="color: hsla(0, 0%, 6%, 0.87);">Login</h1>
+        <form (ngSubmit)="formSubmit()">
+            <div class="txt_field">
+                <input type="text" [(ngModel)]="loginData.username" name="username" required>
+                <span></span>
+                <label>Username</label>
+            </div>
+            <div class="txt_field">
+                <input type="password" [(ngModel)]="loginData.password" name="password" required>
+                <span></span>
+                <label>Password</label>
+            </div>
+            <input type="submit" value="Login">
+            <div class="signup_link">
+                Not a member? <a routerLink="/register">Signup</a>
+            </div>
+        </form>
+    </div>
+    
+</body>

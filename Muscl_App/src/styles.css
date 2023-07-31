@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --title-color: goldenrod;
+  --text-color: hsl(0, 0%, 100%);
+  --body-color: hsla(0, 0%, 6%, 0.87);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Red Hat Display', sans-serif;
+  --second-font: 'Kaushan Script', cursive;
+  --biggest-font-size: 2rem;
+  --bigger-font-size: 1.5rem;
+  --big-font-size: 1.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  /*========== Font weight ==========*/
+  --font-bold: 700;
+  --font-black: 900;
+
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 6rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.75rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-bold);
+}
+
+
+
+.right {
+    padding-left: 1vw;
+}
+
+.logo{
+    padding-left: 5vw;
+    margin-top: 2vh;
+}
+
+.icon{
+    padding: 1vw;
+    width: 55px;
+    height: 50px;
+    filter: invert(100%);
+}
+
+a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.center{
+    padding: 1vw;
+}
+
+.centericon{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    filter: invert(100%);
+}
+
+ .body-map__muscle path:hover{   
+    fill: crimson;
+} 
+
+.heading{
+    color: var(--text-color);
+    font-size: var(--h3-font-size);
+    font-weight: 600;
+    padding: 5vw;
+    background-color:var(--body-color);
+}
+.heading h1{
+    margin: 0;
+}
+
+.subHeading{
+    color: var(--title-color);
+    padding-left: 5vw;
+}
+
+
+.heading img{
+    width: 42vw;
+    padding: 1vw;
+}
+
+.heading ol{
+    list-style: none;
+    counter-reset: steps;
+}
+
+.heading li{
+    background-color: var(--body-color);
+    counter-increment: steps;
+    padding: 0.5em;
+    font-size: large;
+    border-style: outset ;
+    margin: 0.5em;
+    position: relative;
+    padding-left: 1vw;
+}
+
+.heading ol li::before{
+    content: counter(steps);
+    border-radius: 500px;
+   background: var(--title-color);
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   color: rgb(82, 80, 80);
+   text-align: center;
+   left: -45px;
+   line-height: 45px;
+   transform: translateY(-10px);
+   box-shadow: 0 0 3px rgb(0 0 0 / 40%), 
+   0 0 0 5px #848586, 5px 0 2px rgb(0 0 0 / 60%);
+}
+
+
+
+
+
+
